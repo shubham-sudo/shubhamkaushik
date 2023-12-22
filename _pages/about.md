@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Brandeis University. Computer Science
+subtitle: Graduate Student, Researcher
 
 profile:
   align: right
