@@ -1,6 +1,20 @@
----
----
-
+@article{10.1145/3662165.3662766,
+  abbr={DBTest},
+  title={Anatomy of LSM Memory Buffer: Insights & Implications},
+  author={Kaushik, Shubham and Sarkar, Subhadeep},
+  abstract={Log-structured merge (LSM) tree is an ingestion-optimized data structure that is widely used in modern NoSQL key-value stores. To support high throughput for writes, LSM-trees maintain an in-memory buffer that absorbs the incoming entries before writing them to slower secondary storage. We point out that the choice of the data structure and implementation of the memory buffer has a significant impact on the overall performance of LSM-based storage engines. In fact, even with the same implementation of the buffer, the performance of a storage engine can vary by up to several orders of magnitude if there is a shift in the input workload. In this paper, we benchmark the performance of LSM-based storage engines with different memory buffer implementations and under different workload characteristics. We experiment with four buffer implementations, namely, (i) vector, (ii) skip-list, (iii) hash skip-list, and (iv) hash linked-list, and for each implementation, we vary any design choices (such as bucket count in a hash skip-list and prefix length in a hash linked-list). We present a comprehensive performance benchmark for each buffer configuration, and highlight how the relative performance of the different buffer implementations varies with a shift in input workload. Lastly, we present a guideline for selecting the appropriate buffer implementation for a given workload and performance goal.},
+  journal={Proceedings of the Tenth International Workshop on Testing Database Systems},
+  pages={23-29},
+  month={June},
+  year={2024},
+  publisher={acm},
+  doi={10.1145/3662165.3662766},
+  url={https://doi.org/10.1145/3662165.3662766},
+  html={https://dl.acm.org/doi/abs/10.1145/3662165.3662766},
+  pdf={LSMMemory.pdf},
+  altmetric={true},
+  selected={true}
+}
 @article{10.26438/ijcse/v7i5.18281845,
   abbr={JCSE},
   title={Fault Modelling of an Object-Oriented System using CPN},
@@ -10,20 +24,13 @@
   volume={7},
   issue={5},
   pages={1828--1845},
-  numpages={0},
   month={May},
   year={2019},
-  publisher=jcse,
+  publisher={jcse},
   doi={10.26438/ijcse/v7i5.18281845},
   url={https://doi.org/10.26438/ijcse/v7i5.18281845},
   html={https://www.ijcseonline.org/full_paper_view.php?paper_id=4492},
   pdf={304-IJCSE-05980.pdf},
   altmetric={true},
   selected={true}
-}
-
-@articel{
-  title={Anatomy of LSM Memory Buffer: Insights & Implications},
-  author={Kaushik, Shubham and Sarkar, Subhadeep},
-  pdf={LSMMemory.pdf}
 }
