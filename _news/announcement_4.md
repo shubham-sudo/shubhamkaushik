@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Presenting "Anatomy of LSM Memory Buffer" at [DBTest](https://dbtest-workshop.github.io/index.html) affiliated from [SIGMOD](https://2024.sigmod.org/index.shtml), exploring the impact of memory buffer implementations on LSM-engines.
+Presenting "Anatomy of LSM Memory Buffer" at [DBTest](https://dbtest-workshop.github.io/index.html) workshop affiliated from [SIGMOD](https://2024.sigmod.org/index.shtml), exploring the impact of memory buffer implementations on LSM-engines.
