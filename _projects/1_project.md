@@ -1,7 +1,7 @@
 ---
 layout: page
-title: Query-Driven Compactions
-description: Range Query-Driven Compactions in Log-Structured Merge (LSM) Trees
+title: Range Reduce
+description: A Range Query-Driven Compactions in Log-Structured Merge Trees
 img:
 importance: 1
 category: Ongoing
