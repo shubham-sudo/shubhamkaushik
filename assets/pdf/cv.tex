@@ -5,10 +5,14 @@
 \usepackage{ragged2e}
 \usepackage{xstring}
 
-\definecolor{blueviolet}{rgb}{0.4, 0.4, 1}
+\definecolor{blueviolet}{rgb}{0.2, 0.2, 0.5}
 \definecolor{lightgray}{gray}{0.7}
 
 \moderncvtheme[black]{banking}
+\renewcommand{\namefont}{\fontsize{16}{18}\mdseries\upshape}
+\renewcommand{\namestyle}[1]{{\namefont\textbf{#1}}}
+\renewcommand{\sectionfont}{\large\mdseries\upshape}
+\renewcommand{\sectionstyle}[1]{{\sectionfont\textbf{#1}}}
 
 % ######### Variable ############
 \newcommand{\beforesection}{\vspace{-0.5em}}
@@ -129,7 +133,7 @@
 }
 
 \name{Shubham}{Kaushik}
-\extrainfo{PhD Student \textbf{@} Brandeis University}
+\extrainfo{PhD Researcher \textbf{@} Brandeis University}
 
 \begin{document}
 
@@ -148,11 +152,11 @@ Website: \href{https://www.shubhamkaushik.com}{\textcolor{blueviolet}{shubhamkau
 \beforesection
 
 \section{Research Interests}
-\cvline{}{Databases, Data systems, Storage systems, Distributed systems, Data streaming, Cyber security}
+\cvline{}{Databases, Data systems, Storage systems, Distributed systems, Data streaming}  %, Cyber security
 
 \beforesection
 
-\section{Work Experience}
+\section{Professional Experience}
 \workexperience{Jan 2024 \-- Present}{
   \textbf{PhD Researcher}\\
   \href{https://www.brandeis.edu/}{\textcolor{blueviolet}{Brandeis University}}, MA, United States\\
@@ -196,6 +200,13 @@ Website: \href{https://www.shubhamkaushik.com}{\textcolor{blueviolet}{shubhamkau
 \beforesection
 
 \section{Teaching Experience}
+\teachingexperience{\hfill Fall 2024}{
+    \textbf{Teaching Assistant}, \textit{Introduction to Computer Networking (COSI 128A)}\\
+    \textit{Michtom School of Computer Science}, Brandeis University, MA, United States\\
+}
+
+\mediumspace
+
 \teachingexperience{\hfill Spring 2024}{
     \textbf{Teaching Assistant}, \textit{Database Management Systems (COSI 127B)}\\
     \textit{Michtom School of Computer Science}, Brandeis University, MA, United States\\
@@ -229,7 +240,7 @@ Website: \href{https://www.shubhamkaushik.com}{\textcolor{blueviolet}{shubhamkau
 \end{minipage}%
 \begin{minipage}[c]{0.80\textwidth}
   \raggedright{
-    \textbf{Doctor of Philosophy (PhD)}\\
+    \textbf{Doctor of Philosophy (Ph.D.)}\\
     \href{https://www.brandeis.edu/}{\textcolor{blueviolet}{Brandeis University}}, MA, United States\\
     Major: \textbf{Computer Science}\\
   }
@@ -264,7 +275,7 @@ of the LSM Memory Buffer: Insights \& Implications}}}, International Workshop on
 \mediumspace
 
 \publications{JCSE 2019}{\textbf{Shubham Kaushik}, Ratneshwer.\ \href{https://doi.org/10.26438/ijcse/v7i5.18281845}{\textit{\textcolor{blueviolet}{Fault 
-Modelling of an Object-Oriented System using CPN}}}, International Journal of Computer Sciences and Engineering}
+Modeling of an Object-Oriented System using CPN}}}, International Journal of Computer Sciences and Engineering}
 
 \mediumspace
 \beforesection
@@ -292,10 +303,10 @@ School of Computer and Systems Sciences, Jawaharlal Nehru University.
 
 \section{Technical Skills}
 \begin{itemize}\setlength\itemsep{0.2em}
-  \item \textbf{Programming Languages}: C, C++, Python, Java, SQL, Rust (\textit{learning})
+  \item \textbf{Programming Languages}: C, C++, Python, SQL, Rust (\textit{learning})
   \item \textbf{Markup Languages}: HTML, CSS, JSON, YAML, \LaTeX, Markdown
-  \item \textbf{Databases}: RocksDB, MySQL, MongoDB, Redis, SQLite, ORM
-  \item \textbf{Tools \& Frameworks}: Django, Flask, Microservices, Asyncio, Kafka, Git, ETL, Flink, AWS
+  \item \textbf{Databases}: RocksDB, Postgres, MongoDB, Redis, SQLite, ORM
+  \item \textbf{Tools \& Systems}: Kafka, Hadoop, gRPC, Microservices, Asyncio, Git, ETL, Flink, AWS
 \end{itemize}
 
 \beforesection
