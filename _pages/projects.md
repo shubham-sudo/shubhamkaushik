@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Projects
+title: Project
 permalink: /projects/
 description: Building brilliance, bit by bit.
 nav: true

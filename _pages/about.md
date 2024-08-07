@@ -2,7 +2,7 @@
 layout: about
 title: About
 permalink: /
-subtitle: Graduate Student, Researcher
+subtitle: Ph.D. Researcher
 
 profile:
   align: right
