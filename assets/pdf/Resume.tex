@@ -1,0 +1,50 @@
+\documentclass[10pt,a4paper,calibri]{moderncv}
+\usepackage[left=0.75in,right=0.75in,top=0.5in,bottom=0.5in]{geometry}
+\usepackage{url}
+\usepackage{tikz}
+\usepackage{ragged2e}
+\usepackage{xstring}
+
+\moderncvtheme[black]{banking}
+\input{commands}
+
+\name{Shubham}{Kaushik}
+\extrainfo{
+  \renewcommand{\arraystretch}{1.2}
+    \begin{tabular}{c}
+        Software Engineer\\
+        \href{tel:+17745190913}{+1 (774) 519-0913} $|$
+        \href{mailto:kaushiks@brandeis.edu}{\textcolor{blueviolet}{kaushiks[at]brandeis[dot]edu}} $|$
+        \href{https://www.linkedin.com/in/shubham-sudo}{\textcolor{blueviolet}{LinkedIn}} $|$
+        \href{https://www.github.com/shubham-sudo}{\textcolor{blueviolet}{Github}} $|$
+        Boston, MA
+    \end{tabular}
+    \renewcommand{\arraystretch}{1}
+}
+
+
+\begin{document}
+
+\maketitle\
+
+\vspace{-48pt}
+
+\section{Education}
+\input{sections/education}
+
+\section{Technical Skills}
+\input{sections/technical_skills}
+
+\section{Professional Experience}
+\input{sections/professional_experience}
+
+\section{Projects}
+\input{sections/projects}
+
+\section{Certifications}
+\input{sections/certifications}
+
+\section{Curricular Activities}
+\input{sections/curricular_activities}
+
+\end{document}
