@@ -5,479 +5,51 @@
 \usepackage{ragged2e}
 \usepackage{xstring}
 
-\definecolor{blueviolet}{rgb}{0.1, 0.2, 0.45}
-\definecolor{lightgray}{gray}{0.7}
+\newcommand{\profile}{Ph.D. Researcher \textbf{@} Brandeis University}
 
 \moderncvtheme[black]{banking}
-\renewcommand{\namefont}{\fontsize{16}{18}\mdseries\upshape}
-\renewcommand{\namestyle}[1]{{\namefont\textbf{#1}}}
-\renewcommand{\sectionfont}{\mdseries\upshape}
-\renewcommand{\sectionstyle}[1]{{\sectionfont\textbf{\uppercase{#1}}}}
-
-% ######### Variable ############
-\newcommand{\mediumspace}{\vspace{0.6em}}
-
-% Education Details
-\newcommand{\education}[2]{
-  \noindent
-  \begin{minipage}[c]{0.20\textwidth}
-    \hfill
-    #1
-  \end{minipage}%
-  \hspace{0.01\textwidth}
-  \begin{minipage}[c]{0.02\textwidth}
-    \textcolor{lightgray}{\rule{1pt}{1.6cm}}
-  \end{minipage}%
-  \begin{minipage}[c]{0.80\textwidth}
-    \raggedright{
-      #2
-    }
-  \end{minipage}%
-}
-
-% Work Experience Details
-\newcommand{\workexperience}[2]{
-  \noindent
-  \begin{minipage}[c]{0.20\textwidth}
-    \begin{flushright}
-      #1
-    \end{flushright}
-  \end{minipage}%
-  \hspace{0.01\textwidth}
-  \begin{minipage}[c]{0.02\textwidth}
-    \textcolor{lightgray}{\rule{1pt}{0.7cm}}
-  \end{minipage}%
-  \begin{minipage}[c]{0.80\textwidth}
-    \raggedright{
-      #2
-    }
-  \end{minipage}%
-}
-
-% Work Experience Details
-\newcommand{\publications}[2]{
-  \noindent
-  \begin{minipage}[c]{0.15\textwidth}
-    \centering
-    \textbf{#1}
-  \end{minipage}%
-  \hspace{0.01\textwidth}
-  \begin{minipage}[c]{0.02\textwidth}
-    \textcolor{lightgray}{\rule{1pt}{0.75cm}}
-  \end{minipage}%
-  \begin{minipage}[c]{0.80\textwidth}
-    \raggedright{
-      #2
-    }
-  \end{minipage}%
-}
-
-% Teaching Experience Details
-\newcommand{\teachingexperience}[2]{
-  \noindent
-  \begin{minipage}[c]{0.12\textwidth}
-    \begin{center}
-      #1
-    \end{center}
-  \end{minipage}%
-  \hspace{0.01\textwidth}
-  \begin{minipage}[c]{0.02\textwidth}
-    \textcolor{lightgray}{\rule{1pt}{0.7cm}}
-  \end{minipage}%
-  \begin{minipage}[c]{0.86\textwidth}
-    \raggedright{
-      \vspace{0.001cm}
-      #2
-      \vspace{0.001cm}
-    }
-  \end{minipage}%
-}
-
-% Activities Details
-\newcommand{\activities}[2]{
-  \noindent
-  \begin{minipage}[c]{0.10\textwidth}
-    \hfill
-    #1
-  \end{minipage}%
-  \hspace{0.01\textwidth}
-  \begin{minipage}[c]{0.02\textwidth}
-    \textcolor{lightgray}{\rule{1pt}{0.4cm}}
-  \end{minipage}%
-  \begin{minipage}[c]{0.86\textwidth}
-    \justify{
-      \raggedright{
-        #2
-      }
-    }
-  \end{minipage}%
-}
-
-% Certificate Details
-\newcommand{\certificate}[2]{
-  \noindent
-  \begin{minipage}[c]{0.10\textwidth}
-    \hfill
-    #1
-  \end{minipage}%
-  \hspace{0.01\textwidth}
-  \begin{minipage}[c]{0.02\textwidth}
-    \textcolor{lightgray}{\rule{1pt}{0.4cm}}
-  \end{minipage}%
-  \begin{minipage}[c]{0.86\textwidth}
-    \raggedright{
-      #2
-    }
-  \end{minipage}%
-}
+\input{commands}
 
 \name{Shubham}{Kaushik}
-\extrainfo{PhD Researcher \textbf{@} Brandeis University}
+\input{sections/contact_information}
 
 \begin{document}
 
-\makecvtitle\
-
-\vspace{-50pt}
-\section{Contact Information}
-Contact.: \href{tel:+17745190913}{+1 (774) 519-0913}\\ Email:
-\href{mailto:kaushiks@brandeis.edu}{\textcolor{blueviolet}{kaushiks@brandeis.edu}}\;;
-\href{mailto:shubhamk00020@gmail.com}{\textcolor{blueviolet}{shubhamk00020@gmail.com}}\\
-Website:
-\href{https://www.shubhamkaushik.com}{\textcolor{blueviolet}{shubhamkaushik.com}}\;;
-\href{https://www.linkedin.com/in/shubham-sudo}{\textcolor{blueviolet}{LinkedIn}}\;;
-\href{https://www.github.com/shubham-sudo}{\textcolor{blueviolet}{Github}}\\
-Address: 415 South Street Waltham, MA 02453 United States
+\makecvtitle{}
+\vspace{-32pt}
 
 \section{Research Interests}
-\cvline{}{Databases, Data systems, Storage systems, Distributed systems, Data streaming}  %, Cyber security
-
+\input{sections/research_interests}
 
 \section{Professional Experience}
-\workexperience{Jan 2024 \-- Present}{
-	\textbf{Ph.D. Researcher}\\
-	\href{https://www.brandeis.edu/}{\textcolor{blueviolet}{Brandeis University}}, MA, United States\\
-}
-
-\mediumspace
-
-\workexperience{Mar 2022 \-- Aug 2022}{
-	\textbf{Software Engineer}, \textit{Server Programming Team}\\
-	\href{https://www.kwalee.com/}{\textcolor{blueviolet}{Kwalee}}, India\\
-}
-
-\mediumspace
-
-\workexperience{Jun 2021 \-- Mar 2022}{
-	\textbf{Engineer \-- Information Security}, \textit{Cyber Fusion, Information Security}\\
-	\href{https://www.fisglobal.com/en}{\textcolor{blueviolet}{FIS Global}}, India\\
-}
-
-\mediumspace
-
-\workexperience{Oct 2019 \-- Jun 2021}{
-	\textbf{Project Engineer}, \textit{Python Cloud Computing, Wipro Digital}\\
-	\href{https://www.wipro.com/}{\textcolor{blueviolet}{Wipro Limited}}, India\\
-}
-
-\mediumspace
-
-\workexperience{Jul 2018 \-- Oct 2019}{
-	\textbf{Project Engineer}, \textit{Big Data, Cyber Defense}\\
-	\href{https://www.wipro.com/}{\textcolor{blueviolet}{Wipro Limited}}, India\\
-}
-
-\mediumspace
-
-\workexperience{Mar 2017 \-- Apr 2017}{
-	\textbf{Full Stack Developer Intern}, \textit{Backend Team}\\
-	SoPo Internet Private Limited, India\\
-}
-
+\input{sections/professional_experience_cv}
 
 \section{Education}
-\noindent
-\begin{minipage}[c]{0.20\textwidth}
-	\hfill
-	Jan 2024 \-- Present
-\end{minipage}%
-\hspace{0.01\textwidth}
-\begin{minipage}[c]{0.02\textwidth}
-	\textcolor{lightgray}{\rule{1pt}{1.2cm}}
-\end{minipage}%
-\begin{minipage}[c]{0.80\textwidth}
-	\raggedright{
-		\textbf{Doctor of Philosophy (Ph.D.)}\\
-		\href{https://www.brandeis.edu/}{\textcolor{blueviolet}{Brandeis University}}, MA, United States\\
-		Major: \textbf{Computer Science}\\
-	}
-\end{minipage}%
-
-\mediumspace
-
-\education{Sep 2022 \-- Dec 2023}
-{
-	\textbf{Masters of Science (M.S.)}\\
-	\href{https://www.bu.edu/}{\textcolor{blueviolet}{Boston University}}, MA, United States\\
-	Major: \textbf{Computer Science} with specialization in \textit{“Data-Centric Computing"}\\
-	GPA: \textit{3.88/4.0}
-}
-
-\mediumspace
-
-\education{Jul 2014 \-- Jun 2018}
-{
-	\textbf{Bachelor of Technology (B.Tech.)}\\
-	\href{https://mdu.ac.in/}{\textcolor{blueviolet}{Maharshi Dayanand University}}, Haryana, India\\
-	Major: \textbf{Computer Science} \& \textbf{Engineering}\\
-	Thesis: \textit{“Fault Modelling of an Object-Oriented System using Colored Petri Nets”}\\
-}
-
+\input{sections/education}
 
 \section{Publications}
-\publications{DBTest 2024}{\textbf{Shubham Kaushik}, Subhadeep Sarkar \href{https://doi.org/10.1145/3662165.3662766}{\textit{\textcolor{blueviolet}{Anatomy
-				of the LSM Memory Buffer: Insights \& Implications}}}, In Proceedings of the International Workshop on Testing Database Systems}
-
-\mediumspace
-
-\publications{JCSE 2019}{\textbf{Shubham Kaushik}, Ratneshwer.\ \href{https://doi.org/10.26438/ijcse/v7i5.18281845}{\textit{\textcolor{blueviolet}{Fault
-				Modeling of an Object-Oriented System using CPN}}}, International Journal of Computer Sciences and Engineering}
-
-\mediumspace
+\input{sections/publications}
 
 \section{Posters}
-\publications{NEDB Day 2024}{\textbf{Shubham Kaushik}, Manos Athanassoulis, Subhadeep Sarkar \href{https://bu-disc.github.io/nedbday/2024/download/posters/RangeReduce_A_Range_Query_Driven_Compaction_for_LSM-Trees.pdf}{\textit{\textcolor{blueviolet}{RangeReduce: A Range Query Driven Compaction for LSM-Trees}}}, North East Database Day}
-
+\input{sections/posters}
 
 \section{Bachelor's Thesis}
-\textbf{Shubham Kaushik}.\ \href{https://doi.org/10.26438/ijcse/v7i5.18281845}
-{\textit{\textcolor{blueviolet}{Fault Modelling of an Object-Oriented System using Colored Petri Nets},}} 2018.\\
-% Department of Computer Science \& Engineering, Maharshi Dayanand University, India.\\
-Advisor:
-\href{https://www.jnu.ac.in/content/ratnesh}{\textcolor{blueviolet}{Dr.\
-		Ratneshwer}}, School of Computer and Systems Sciences, Jawaharlal Nehru
-University.
-
-% \mediumspace
-
-% My thesis analyzes the formal representation of object-oriented properties using colored petri nets to enhance the 
-% understanding of software fault behavior, offering insights for the software development, testing, and 
-% maintenance phases. I modeled the various faults in object-oriented systems, emphasizing on faults related to object 
-% interactions, such as inheritance and polymorphism states.
-
+\input{sections/bachelors_thesis}
 
 \section{Technical Skills}
-\begin{itemize}\setlength\itemsep{0.4em}
-	\item \textbf{Programming Languages}: C, C++, Python, SQL, Rust (\textit{learning})
-	\item \textbf{Markup Languages}: HTML, CSS, JSON, YAML, \LaTeX, Markdown
-	\item \textbf{Databases}: RocksDB, Postgres, MongoDB, Redis, SQLite, ORM
-	\item \textbf{Tools \& Systems}: Kafka, Hadoop, gRPC, Microservices, Asyncio, Git, ETL, Flink, AWS
-\end{itemize}
-
+\input{sections/technical_skills}
 
 \section{Projects}
-
-% \textit{\fontsize{12}{0}\selectfont \underline{Academic Research}}
-\begin{itemize}\setlength\itemsep{0.4em}
-	\item \textbf{Range Query-Aware Log-Structured Merge (LSM) Trees} \textit{(Ongoing)}: Developing data reorganization strategies and layouts to optimize the performance of range queries in LSM-based storage systems.
-	      % LSM trees are at 
-	      % the heart of several NoSQL data stores due to their ingestion-optimized design. However, this superior ingestion 
-	      % performance comes at the cost of poor range query performance and increased write amplification. In this project, we 
-	      % introduce a new family of data reorganization strategies and data layouts, driven by range queries. These strategies allow us to (i) 
-	      % reduce the overall data movement during workload execution and (ii) reduce the I/O cost for future range queries. I am
-	      % currently in the process of integrating our solutions on RocksDB, a widely used commercial LSM-based data store.
-	      % \href{https://drive.google.com/file/d/19AeEG3e_Tao52vNcxTtTuzZMYfD2s9Tx/view?usp=sharing}{[\textcolor{blueviolet}{ppt}]}
-	      % \href{https://drive.google.com/file/d/1g9B3lbKy7yektDqqtbGGdYSRTl7-SEvC/view?usp=sharing}{[\textcolor{blueviolet}{report}]}
-	      \href{https://github.com/shubham-sudo/LSMQueryDrivenCompaction}{[\textcolor{blueviolet}{readme}]}
-
-	      % \item \textbf{Enabling Efficient Range Deletes in LSM-Trees} \textit{(Ongoing)}: Introducing a lightweight and updatable range delete filter to avoid 
-	      % superfluous accesses to storage using a small amount of metadata
-	      % % LSM-based data stores perform 
-	      % % data deletion logically, without physically deleting the target data objects. This leads to significant performance 
-	      % % bottlenecks when deleting ranges of data, as the logically deleted data continues to `live' in the database, 
-	      % % increasing the overall cost of operations. In this project, we introduce a light weight and updatable range delete filter to avoid 
-	      % % superfluous accesses to slow storage in exchange for a small amount of metadata in memory. The proposed solution 
-	      % % substantially reduces the execution cost for workloads with range deletes.
-	      % \href{https://drive.google.com/file/d/1MNnnk1DBNMEPNbv99z1D3LM3pILTUgj1/view?usp=sharing}{[\textcolor{blueviolet}{report}]}
-	      % \href{https://github.com/shubham-sudo/LSMRangeDeletes}{[\textcolor{blueviolet}{readme}]}
-
-	\item \textbf{Multi Layered Detection Model (MLED) for Error Detection} \textit{(Ongoing)}: Creating a flexible system to reduce undetected errors in petabyte-scale file transfers through layered error-checking methods.
-	      % MLED is a layered 
-	      % architecture designed to significantly reduce the Undetected Error Probability in file transfers. This is particularly 
-	      % important for petabyte-scale file transfers, which are often used for data collected from scientific instruments. The 
-	      % architecture is parameterized by a number of layers ($n$), and a policy ($P_i$) for each layer that describes its 
-	      % operation. MLED provides flexibility with variable layer counts in different network sections and allows distinct 
-	      % policies at various layers. Its recursive delivery system ensures a high probability of error-free file transfer to 
-	      % the destination.
-	      % \href{https://docs.google.com/presentation/d/1W_REQ6JN4Z17PV5PPEUSalE829oVi6tP/edit?usp=drive_link&ouid=111208771990960831325&rtpof=true&sd=true}{[\textcolor{blueviolet}{ppt}]}
-	      \href{https://github.com/shubham-sudo/mled}{[\textcolor{blueviolet}{readme}]}
-
-	\item \textbf{Benchmarking LSM-Based Storage Engines}: Analyzed performance of LSM trees with different memory buffers across various types of workloads, offering guidelines for optimal buffer selection.
-	      \href{https://shubhamkaushik.com/assets/pdf/LSMMemory.pdf}{[\textcolor{blueviolet}{paper}]}
-
-	\item \textbf{Heterogeneity-Aware Operator Placement for Streaming Systems}: Proposed a dynamic method to place data processing operators based on data selectivity, improving efficiency and reducing network traffic.
-	      % Streaming systems are 
-	      % widely used for real-time data processing. However, all operators within a cluster runs with a static configuration, which 
-	      % is suboptimal for dynamic workloads. In this project, we proposed an approach to dynamically place operators based on 
-	      % the selectivity and heterogeneity of the data. Toward this, I modified Apache Flink's scheduler to dynamically 
-	      % switch tasks at the edge devices (\textit{Raspberry Pi}) and servers. This reduced the network traffic and improved 
-	      % system efficiency and resource utilization.
-	      % \href{https://docs.google.com/presentation/d/1aD28E6t7_gmsuiYY4dATWUFKkzRcipnO/edit?usp=sharing&ouid=111208771990960831325&rtpof=true&sd=true}{[\textcolor{blueviolet}{ppt}]}
-	      \href{https://github.com/shubham-sudo/HeterogeneityAwareOperatorPlacementforStreamProcessingSystemsAtEdge-RaspberryPi}{[\textcolor{blueviolet}{readme}]}
-
-	\item \textbf{Finding Vulnerabilities in VS Code Extensions}: Created a simulation framework to automate the installation and execution of VS Code extensions, identifying security vulnerabilities by analyzing open ports.
-	      % The use of third-party extensions can introduce 
-	      % potential security vulnerabilities, which can also render the base applications vulnerable. In this project, I identified 
-	      % security vulnerabilities in VS Code extensions and developed an automated tool for their detection. I devised a 
-	      % simulation framework using the Pyautogui library to install and execute extensions, and detect security vulnerabilities 
-	      % by analyzing the open ports associated with each extension. The analysis specifically targeted \textit{Path Traversal} and 
-	      % \textit{Zip Slip} attacks, and detected 5\% of the extensions examined as vulnerable. 
-	      % \href{https://docs.google.com/presentation/d/1XQZZJBEJJRjX5N6yPjL3KkFcKuOgMxaI/edit?usp=sharing&ouid=111208771990960831325&rtpof=true&sd=true}{[\textcolor{blueviolet}{ppt}]}
-	      % \href{https://drive.google.com/file/d/1SUWsf2YVB4lKOOoEUgAEGc34aK5barhC/view?usp=sharing}{[\textcolor{blueviolet}{report}]}
-	      \href{https://github.com/prateekdceit06/VSCode-Extensions-Simulator}{[\textcolor{blueviolet}{readme}]}
-\end{itemize}
-
-% \mediumspace
-
-% \textit{\fontsize{12}{0}\selectfont \underline{Kwalee}}
-% \begin{itemize}\setlength\itemsep{0.3em}
-%   \item \textbf{Leaderboard \& Loot-Box}: 
-%   As a member of a cross-functional team, I played a crucial role in designing and developing 
-%   two essential features for hyper-casual games: the \textit{leaderboard} and \textit{loot box}. These features were integrated into three new 
-%   game releases, collaborating closely with the \textit{Tools \& Programming} team to ensure seamless functionality 
-%   within the games. Moreover, I conducted thorough \textit{code reviews} to identify areas for improvement, including 
-%   performance optimizations, adherence to coding standards, and bug fixing.
-% \end{itemize}
-
-% \mediumspace
-
-% \textit{\fontsize{12}{0}\selectfont \underline{Industry Research}}
-% \begin{itemize}\setlength\itemsep{0.3em}
-%   \item \textbf{Asynchronous IP-Scanning}: In this project, I designed an \textit{asynchronous} IP scanning module to 
-%   pipeline the scanning of a large number (more than 100K) of IPs from internet. This module was implemented in 
-%   \textit{Python} while leveraging \textit{multithreading}, \textit{socket programming}, and \textit{asyncio} techniques 
-%   to maximize the performance. The automation enhanced the security posture, emphasizing the importance of continuously 
-%   monitoring IP addresses, and improved the productivity of the security team by up to 50\%.
-
-%   % The automation of the IP Scanning process significantly enhanced the security posture, 
-%   % emphasizing the importance of continuously monitoring and assessing IP addresses to identify potential vulnerabilities 
-%   % and threats.
-
-%   % \item \textbf{Playbooks \& Integrations (Palo Alto Cortex XSOAR)}: I developed integration 
-%   % scripts and playbooks using the \textit{Palo Alto Networks Cortex XSOAR} platform to enhance security automation and 
-%   % orchestration capabilities. These contributions, made to the \href{https://github.com/xsoar-contrib}{\textit{``xsoar-contrib"}} 
-%   % repository, included integrations scripts for platforms such as 
-%   % \href{https://github.com/demisto/content/pull/18139}{\textit{``\textcolor{blueviolet}{DB2}"}}, 
-%   % \href{https://github.com/demisto/content/pull/17845}{\textit{``\textcolor{blueviolet}{GenericSQL}"}}, and 
-%   % \href{https://github.com/demisto/content/pull/17455}{\textit{``\textcolor{blueviolet}{FireMon Security}"}}. These 
-%   % integrations help security teams to connect such platforms with Cortex XSOAR, enabling log collection and 
-%   % reinforcing overall security.
-% \end{itemize}
-
-% \mediumspace
-
-% \begin{itemize}\setlength\itemsep{0.3em}
-%   % \item \textbf{Data Masking}: I developed a RESTful microservice to securely mask personally identifiable information 
-%   % in various file formats, including CSV, Excel, mainframe, and HTML.\ I also designed an efficient masking algorithm 
-%   % that pseudonymizes the users' personal data stored in flat files. This service streamlined the process of masking 
-%   % thousands of files, enhancing the system performance and reducing manual intervention by 70\%.
-
-%   % \item \textbf{Data Inquiry}: I optimized the Data Inquiry service using the \textit{asyncio framework} in Python 
-%   % which enabled \textit{asynchronous execution} and effective coordination of HTTP requests. It allowed the inquiry 
-%   % service to process multiple requests concurrently and reduce the turnaround time. These enhancements improved the 
-%   % system efficiency by up to 50\%, allowing faster responses and better utilization of computational resources.
-
-%   \item \textbf{Anomaly Detection}: In this cyber-defense project, I developed a novel anomaly detection agent 
-%   that is capable of monitoring network traffic from multiple systems using \textit{Scapy}. The agent continuously 
-%   analyzed the data in real time, identifying and flagging any suspicious or unusual activities. The agent also 
-%   identified malicious IPs using \textit{K-means clustering} and a repository of malicious 
-%   IPs. It triggers alerts for harmful events, providing valuable information to security analysts for further 
-%   investigation and threat mitigation.
-
-%   % \item \textbf{Incident Management System}: I developed and implemented a comprehensive incident 
-%   % management system to streamline the tracking and prioritization of compromised incidents. The system 
-%   % allows efficient categorization of incidents based on their severity levels, allowing the \textit{security engineering} 
-%   % team to prioritize and respond promptly to critical security threats. This implementation improved the security
-%   % engineering team response time by 40\% for critical incidents.
-% \end{itemize}
-
+\input{sections/projects}
 
 \section{Teaching Experience}
-\teachingexperience{\hfill Fall 2024}{
-	\textbf{Teaching Assistant}, \textit{Introduction to Computer Networking (COSI 128A)}\\
-	\textit{Michtom School of Computer Science}, Brandeis University, MA, United States\\
-}
-
-\mediumspace
-
-\teachingexperience{\hfill Spring 2024}{
-	\textbf{Teaching Assistant}, \textit{Database Management Systems (COSI 127B)}\\
-	\textit{Michtom School of Computer Science}, Brandeis University, MA, United States\\
-}
-
-\mediumspace
-
-\teachingexperience{\hfill Fall 2023\\ \hfill Spring 2023}{
-	\textbf{Teaching Assistant}, \textit{Data Mechanics (DS 310)}\\
-	\textit{Center for Computing \& Data Sciences}, Boston University, MA, United States\\
-}
-
-\mediumspace
-
-\teachingexperience{\hfill Fall 2022}{
-	\textbf{Teaching Assistant}, \textit{Computer Networks (CS 455)}\\
-	\textit{Department of Computer Science}, Boston University, MA, United States\\
-}
+\input{sections/teaching_experience}
 
 
 \section{Certifications}
-
-\certificate{Jul 2023}{
-	\textit{``The Ultimate Hands-On \textbf{Hadoop}: Tame your \textbf{Big Data!}''} \-- Udemy
-	\href{https://ude.my/UC-5946a326-519d-4821-8901-aa214407757c}{[\textcolor{blueviolet}{link}]}
-}
-
-\mediumspace
-
-\certificate{Jul 2023}{
-	\textit{``Beginning \textbf{C++} programming from Beginner to Beyond''} \-- Udemy
-	\href{https://ude.my/UC-26cecb9c-69d3-4d6c-a8bc-6167d0b145d4}{[\textcolor{blueviolet}{link}]}
-}
-
-\mediumspace
-
-\certificate{Oct 2018}{
-	Statement of accomplishment for \textit{``\textbf{Python} Track''} \-- DataCamp
-	\href{https://www.datacamp.com/statement-of-accomplishment/track/5c7d7a07e88eef902cc101bc72ebf219dc312b1c}
-	{[\textcolor{blueviolet}{link}]}
-}
-
-% \mediumspace
-
-% \certificate{May 2016}{
-%   \textit{``Core \textbf{Java}''} \-- Oracle's Workforce Development Program
-%   \href{https://drive.google.com/file/d/1fl1wQYMtamojp-9NRT6B2itN1w1XTzFG/view?usp=sharing}{[\textcolor{blueviolet}{link}]}
-% }
-
+\input{sections/certifications}
 
 \section{Curricular Activities}
-
-\activities{Sep 2023}{
-	Judged and mentored at \href{https://hackmit.org/}{\textcolor{blueviolet}{\textit{HackMIT 2023}}}, aiding teams with
-	technical challenges.
-}
-
-\mediumspace
-
-\activities{Nov 2022}{
-	Mentored 4 teams, with an average of 20 participants at \href{https://bostonhacks.io/}
-	{\textit{\textcolor{blueviolet}{BostonHacks}}}.
-}
-
-\mediumspace
-
-\activities{Jan 2017}{
-	Volunteered in the Program Event Management team at the \textit{National Youth Festival}.
-}
+\input{sections/curricular_activities}
 
 \end{document}
