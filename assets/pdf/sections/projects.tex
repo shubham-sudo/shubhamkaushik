@@ -10,6 +10,12 @@
 %   \href{https://drive.google.com/file/d/1g9B3lbKy7yektDqqtbGGdYSRTl7-SEvC/view?usp=sharing}{[\textcolor{blueviolet}{report}]}
   \href{https://shubhamkaushik.com/projects/designing_range_query_aware_log_structured_merge_tree/}{[\textcolor{blueviolet}{readme}]}
 
+  \item \textbf{Anatomy of LSM Memory Buffer} \textit{(Ongoing)}: In LSM-based data stores, memory buffers are often overlooked 
+  due to their small footprint, yet they serve as a critical gateway for data ingestion. This project focuses on optimizing 
+  buffer implementations that dynamically adapt to shifting workloads to maximize performance. As a first step, we analyzed 
+  existing buffer designs, with our findings accepted at DBTest 2024 (SIGMOD). Currently, we are exploring Cassandra’s trie-based 
+  buffer and other novel implementations to expand the solution space, with the next milestone focused on workload-aware dynamic buffer switching policy.
+  \href{https://shubhamkaushik.com/assets/pdf/LSMMemory.pdf}{[\textcolor{blueviolet}{PDF}]}
 
   \item \textbf{Enabling Efficient Range Deletes in LSM-Trees} \textit{(Ongoing)}: LSM-based data stores perform 
   data deletion logically, without physically deleting the target data objects. This leads to significant performance 
@@ -21,24 +27,33 @@
   \href{https://shubhamkaushik.com/projects/enabling_efficient_range_deletes_in_lsm_trees/}{[\textcolor{blueviolet}{readme}]}
 
 
-  \item \textbf{Heterogeneity-Aware Operator Placement for Stream Processing Systems at the Edge}: Streaming systems are 
-  widely used for real-time data processing. However, all operators within a cluster runs with a static configuration, which 
-  is suboptimal for dynamic workloads. In this project, we proposed an approach to dynamically place operators based on 
-  the selectivity and heterogeneity of the data. Toward this, I modified Apache Flink's scheduler to dynamically 
-  switch tasks at the edge devices (\textit{Raspberry Pi}) and servers. This reduced the network traffic and improved 
-  system efficiency and resource utilization.
+  \item \textbf{Heterogeneity-Aware Operator Placement for Stream Processing Systems at the Edge}: Streaming systems process 
+  real-time data but rely on static operator configurations, which are suboptimal for dynamic workloads. This project proposed 
+  dynamic operator placement based on data selectivity and heterogeneity. I modified Apache Flink's scheduler to dynamically 
+  switch tasks at the edge devices (\textit{Raspberry Pi}) and servers, reducing network traffic and improving system efficiency
+   and resource utilization.
+  % Streaming systems are 
+  % widely used for real-time data processing. However, all operators within a cluster runs with a static configuration, which 
+  % is suboptimal for dynamic workloads. In this project, we proposed an approach to dynamically place operators based on 
+  % the selectivity and heterogeneity of the data. Toward this, I modified Apache Flink's scheduler to dynamically 
+  % switch tasks at the edge devices (\textit{Raspberry Pi}) and servers. This reduced the network traffic and improved 
+  % system efficiency and resource utilization.
 %   \href{https://docs.google.com/presentation/d/1aD28E6t7_gmsuiYY4dATWUFKkzRcipnO/edit?usp=sharing&ouid=111208771990960831325&rtpof=true&sd=true}{[\textcolor{blueviolet}{ppt}]}
   \href{https://shubhamkaushik.com/projects/finding_vulnuerbilities_in_VS_Code_extensions/}{[\textcolor{blueviolet}{readme}]}
 
 
-  \item \textbf{Finding Vulnerabilities in VS Code Extensions}: The use of third-party extensions can introduce 
-  potential security vulnerabilities, which can also render the base applications vulnerable. In this project, I identified 
-  security vulnerabilities in VS Code extensions and developed an automated tool for their detection. I devised a 
-  simulation framework using the Pyautogui library to install and execute extensions, and detect security vulnerabilities 
-  by analyzing the open ports associated with each extension. The analysis specifically targeted \textit{Path Traversal} and 
-  \textit{Zip Slip} attacks, and detected 5\% of the extensions examined as vulnerable. 
+  \item \textbf{Finding Vulnerabilities in VS Code Extensions}: The third-party extensions can introduce security risks, 
+  compromising base applications. I developed an automated tool to detect vulnerabilities in VS Code extensions. 
+  I built a simulation framework to install, execute, and analyze extensions for open-port risks, specifically targeting 
+  \textit{Path Traversal} and \textit{Zip Slip} attacks, identified vulnerabilities in 5\% of examined extensions.
+  % The use of third-party extensions can introduce 
+  % potential security vulnerabilities, which can also render the base applications vulnerable. In this project, I identified 
+  % security vulnerabilities in VS Code extensions and developed an automated tool for their detection. I devised a 
+  % simulation framework using the Pyautogui library to install and execute extensions, and detect security vulnerabilities 
+  % by analyzing the open ports associated with each extension. The analysis specifically targeted \textit{Path Traversal} and 
+  % \textit{Zip Slip} attacks, and detected 5\% of the extensions examined as vulnerable. 
   % \href{https://docs.google.com/presentation/d/1XQZZJBEJJRjX5N6yPjL3KkFcKuOgMxaI/edit?usp=sharing&ouid=111208771990960831325&rtpof=true&sd=true}{[\textcolor{blueviolet}{ppt}]}
-  \href{https://shubhamkaushik.com/assets/pdf/vulnerabilities_in_vs_code.pdf}{[\textcolor{blueviolet}{report}]}
+  % \href{https://shubhamkaushik.com/assets/pdf/vulnerabilities_in_vs_code.pdf}{[\textcolor{blueviolet}{report}]}÷
   \href{https://shubhamkaushik.com/projects/heterogeneity_aware_operator_placement_for_stream_processing_systems_at_the_edge/}{[\textcolor{blueviolet}{readme}]}
 %   \href{https://github.com/prateekdceit06/VSCode-Extensions-Simulator}{[\textcolor{blueviolet}{readme}]}
 \end{itemize}
