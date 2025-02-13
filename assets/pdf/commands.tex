@@ -7,7 +7,8 @@
 %-------------------------------------------------------------------------------
 %                Spacing
 %-------------------------------------------------------------------------------
-\newcommand{\mediumspace}{\vspace{0.6em}}
+\newcommand{\smallspace}{\vspace{0.12em}}
+\newcommand{\mediumspace}{\vspace{0.45em}}
 
 %-------------------------------------------------------------------------------
 %                Renew Commands
@@ -44,12 +45,20 @@
   \begin{minipage}[c]{0.81\textwidth} \raggedright{#2} \end{minipage}%
 }
 
+\newcommand{\talk}[2]{
+  \noindent
+  \begin{minipage}[c]{0.10\textwidth} \hfill #1 \end{minipage}%
+  \hspace{0.01\textwidth}
+  \begin{minipage}[c]{0.02\textwidth} \textcolor{lightgray}{\rule{1pt}{0.4cm}} \end{minipage}%
+  \begin{minipage}[c]{0.86\textwidth} \raggedright{#2} \end{minipage}%
+}
+
 \newcommand{\teachingexperience}[2]{
   \noindent
-  \begin{minipage}[c]{0.12\textwidth} \centering #1 \end{minipage}%
+  \begin{minipage}[c]{0.154\textwidth} \centering #1 \end{minipage}%
   \hspace{0.01\textwidth}
-  \begin{minipage}[c]{0.02\textwidth} \textcolor{lightgray}{\rule{1pt}{0.7cm}} \end{minipage}%
-  \begin{minipage}[c]{0.84\textwidth} \raggedright{#2} \end{minipage}%
+  \begin{minipage}[c]{0.02\textwidth} \textcolor{lightgray}{\rule{1pt}{0.35cm}} \end{minipage}%
+  \begin{minipage}[c]{0.76\textwidth} \raggedright{#2} \end{minipage}%
 }
 
 \newcommand{\activities}[2]{
@@ -65,5 +74,13 @@
   \begin{minipage}[c]{0.10\textwidth} \hfill #1 \end{minipage}%
   \hspace{0.01\textwidth}
   \begin{minipage}[c]{0.02\textwidth} \textcolor{lightgray}{\rule{1pt}{0.4cm}} \end{minipage}%
+  \begin{minipage}[c]{0.86\textwidth} \raggedright{#2} \end{minipage}%
+}
+
+\newcommand{\profser}[2]{
+  \noindent
+  \begin{minipage}[c]{0.14\textwidth} \hfill #1 \end{minipage}%
+  \hspace{0.01\textwidth}
+  \begin{minipage}[c]{0.02\textwidth} \textcolor{lightgray}{\rule{1pt}{0.35cm}} \end{minipage}%
   \begin{minipage}[c]{0.86\textwidth} \raggedright{#2} \end{minipage}%
 }
