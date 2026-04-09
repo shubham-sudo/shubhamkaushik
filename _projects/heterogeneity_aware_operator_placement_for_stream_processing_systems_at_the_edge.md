@@ -3,7 +3,7 @@ layout: page
 title: Flink Scheduler
 description: Heterogeneity-Aware Operator Placement for Stream Processing Systems at the Edge
 img: assets/img/flink-scheduler.png
-importance: 1
+importance: 2
 category: Academics
 related_publications: 
 ---
