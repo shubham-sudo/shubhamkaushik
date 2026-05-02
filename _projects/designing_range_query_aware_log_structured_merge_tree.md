@@ -4,7 +4,7 @@ title: Range Reduce
 description: A Range Query-Driven Compactions in Log-Structured Merge Trees
 img: assets/img/range_reduce_3.png
 importance: 1
-category: Ongoing
+category: Published
 ---
 
 <div class="row justify-content-sm-center">
