@@ -1,10 +1,11 @@
 ---
 layout: page
 title: Range Reduce
-description: A Range Query-Driven Compactions in Log-Structured Merge Trees
+description: A Range Query-Driven Compaction Strategy for LSM Trees — Accepted for Publication
 img: assets/img/range_reduce_3.png
 importance: 1
 category: Published
+related_publications: kaushik2026rangereduce
 ---
 
 <div class="row justify-content-sm-center">

@@ -5,6 +5,7 @@ description: Anatomy of LSM Memory Buffer Insights & Implications
 img: assets/img/motivation-a.png
 importance: 1
 category: Published
+related_publications: kaushik2024lsmbuffer
 ---
 
 <div class="row justify-content-sm-center">

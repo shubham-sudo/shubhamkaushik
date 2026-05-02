@@ -6,14 +6,13 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Shubham
 middle_name: 
 last_name: Kaushik
-email: 
-description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+email: shubhamk00020@gmail.com
+description: >
+  PhD researcher at Brandeis University exploring LSM-tree optimizations and data systems.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-  Photos from <a href="https://unsplash.com" target="_blank">Unsplash</a>.
-keywords: portfolio-website  # add your own keywords or leave empty
+keywords: LSM trees, data systems, distributed systems, PhD, Brandeis University
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: SK # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
@@ -53,7 +52,6 @@ footer_fixed: true
 # Dimensions
 max_width: 800px
 
-# TODO: add layout settings (single page vs. multi-page)
 
 # -----------------------------------------------------------------------------
 # Open Graph & Schema.org
@@ -103,7 +101,7 @@ discord_id: # your discord id (18-digit unique numerical identifier)
 zotero_username: # your zotero username
 wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
 
-contact_note: >
+contact_note:
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -147,8 +145,7 @@ related_blog_posts:
 #   lang: en
 
 # Disqus comments (DEPRECATED)
-disqus_shortname: al-folio # put your disqus shortname
-# https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+disqus_shortname: # disabled
 
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
@@ -163,8 +160,6 @@ disqus_shortname: al-folio # put your disqus shortname
 
 collections:
   news:
-    defaults:
-      layout: post
     output: true
     permalink: /news/:path/
   projects:
@@ -228,12 +223,17 @@ plugins:
   - jekyll-twitter-plugin
   - jemoji
 
-# Sitemap settings
+# Sitemap settings + collection defaults
 defaults:
   - scope:
       path: "assets"
     values:
       sitemap: false
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: post
 
 sass:
   style: compressed
@@ -298,8 +298,8 @@ scholar:
 
 # Display different badges withs stats for your publications
 enable_publication_badges:
-  altmetric: true # Altmetric badge (https://www.altmetric.com/products/altmetric-badges/)
-  dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
+  altmetric: false
+  dimensions: false
 
 # Filter out certain bibtex entry keywords used internally from the bib output
 filtered_bibtex_keywords: [abbr, abstract, arxiv, bibtex_show, html, pdf, selected, supp, blog, code, poster, slides, website, preview, altmetric]
