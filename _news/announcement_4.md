@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Presenting at DBTest SIGMOD 2024
 date: 2024-06-08 07:59:00-0400
 inline: true
 related_posts: false

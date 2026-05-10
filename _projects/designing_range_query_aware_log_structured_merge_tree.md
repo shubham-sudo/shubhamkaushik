@@ -60,4 +60,5 @@ RangeReduce represents a **new approach to LSM-tree optimization**, tackling one
 
 #### For more details, check out:
 - 📄 [View the Poster](https://nedbday.github.io/2025/download/posters/RangeReduce_Range_Query_Driven_Compactions_in_LSM-Engine.pdf)  
+- 🎥 [Watch the Talk](https://www.youtube.com/watch?v=xgJ2g_CLjSQ)  
 - 🐙 [GitHub Repository](https://github.com/SSD-Brandeis/LSMQueryDrivenCompaction)

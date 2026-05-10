@@ -1,5 +1,6 @@
 ---
 layout: post
+title: Poster at NE Database Day 2025
 date: 2025-01-09 07:59:00-0400
 inline: true
 related_posts: false
