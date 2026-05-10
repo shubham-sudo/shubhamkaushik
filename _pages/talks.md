@@ -9,7 +9,7 @@ nav_order: 3
 
 <div class="talks">
   {% assign sorted_talks = site.talks | sort: "date" | reverse %}
-  <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3">
+  <div class="row">
     {% for talk in sorted_talks %}
 
     {% comment %} Resolve card link: video > slides {% endcomment %}
@@ -31,7 +31,7 @@ nav_order: 3
       {% assign card_link = "" %}
     {% endif %}
 
-    <div class="col mb-4">
+    <div class="col-12 col-sm-6 col-md-4 mb-4">
       <a {% if card_link != "" %}href="{{ card_link }}" target="_blank"{% endif %}
          class="homepage-project-link" style="{% if card_link == "" %}cursor: default; pointer-events: none;{% endif %}">
         <div class="card homepage-project-card h-100">
