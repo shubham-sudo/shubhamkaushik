@@ -3,95 +3,95 @@
   contents:
     - name: Full Name
       value: Shubham Kaushik
-    - name: Date of Birth
-      value: 15th February 1997
+    - name: Email
+      value: kaushiks@brandeis.edu
     - name: Languages
       value: English, Hindi
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: Ph.D. in Computer Science
+      institution: Brandeis University, Waltham, MA, USA
+      year: 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
+        - "GPA: 3.97 / 4.0"
+        - "Advisor: Prof. Subhadeep Sarkar"
+        - Research on LSM-tree storage engines, adaptive data structures, and systems performance optimization.
+    - title: M.S. in Computer Science — Data-Centric Computing
+      institution: Boston University, Boston, MA, USA
+      year: 2022 - 2023
       description:
-        - Description 1.
-        - Description 2.
+        - "GPA: 3.88 / 4.0"
+    - title: B.Tech. in Computer Science & Engineering
+      institution: Maharshi Dayanand University, India
+      year: 2014 - 2018
 
 - title: Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Ph.D. Researcher
+      institution: Smart & Scalable Data Systems Lab, Brandeis University
+      year: 2024 - Present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Designing and implementing adaptive storage engines in C/C++ and Rust.
+        - Developing FluidLSM, an RL-driven adaptive LSM-tree for dynamically shifting workloads.
+        - Published at ICDE 2026, TPCTC 2025, and DBTest 2024.
+    - title: Software Engineer — Scalability & Infrastructure
+      institution: Kwalee, India
+      year: 2022
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Backend scalability and server-side infrastructure engineering.
+    - title: Engineer — Information Security Automation
+      institution: FIS Global, India
+      year: 2021 - 2022
       description:
+        - Designed and implemented automated security workflows and threat detection pipelines.
+    - title: Project Engineer — Cloud Computing & Big Data Security
+      institution: Wipro Limited, India
+      year: 2018 - 2021
+      description:
+        - Cloud infrastructure engineering and big data security solutions for enterprise clients.
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
+- title: Technical Skills
+  type: nested_list
+  contents:
+    - title: Programming Languages
+      items:
+        - C, C++, Rust, Python, Java, SQL, Golang
+    - title: Databases & Storage
+      items:
+        - RocksDB, PostgreSQL, Redis, SQLite, MongoDB
+    - title: Tools & Systems
+      items:
+        - Linux, GDB, Perf, Git, Docker, AWS, Apache Flink, Asyncio
 
-- title: Open Source Projects
+- title: Professional Service
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
-
-- title: Honors and Awards
-  type: time_table
-  contents:
-    - year: 1921
-      items: 
-        - Nobel Prize in Physics 
-        - Matteucci Medal
-    - year: 2029
-      items: 
-        - Max Planck Medal
+    - year: 2026
+      items:
+        - Member, VLDB 2026 Shadow PC
+    - year: 2025
+      items:
+        - Web Chair, Northeast Database (NEDB) Day 2025
+        - External Reviewer, IEEE International Conference on Big Data
+    - year: 2024 - Present
+      items:
+        - Member, Association for Computing Machinery (ACM)
+        - Student Member, Institute of Electrical and Electronics Engineers (IEEE)
 
 - title: Academic Interests
   type: nested_list
   contents:
-    - title: Topic 1.
-      items: 
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
+    - title: Research Areas
       items:
-        - Description 1.
-        - Description 2.
-
-- title: Other Interests
-  type: list
-  contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+        - Storage Systems and Data Structures
+        - LSM-Tree Optimization and Adaptive Engines
+        - Distributed and Cloud Data Systems
+        - Machine Learning for Systems
+    - title: Technologies
+      items:
+        - RocksDB internals and compaction strategies
+        - Key-value store benchmarking
+        - In-memory data structure design
