@@ -6,4 +6,4 @@ inline: true
 related_posts: false
 ---
 
-Accepted as a Program Committee member for VLDB 2027.
+Serving as a Program Committee member for VLDB 2027.
