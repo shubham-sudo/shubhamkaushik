@@ -1388,6 +1388,29 @@ nav[data-toggle="toc"] {
   }
 }
 
+// All News Page
+.news table tr {
+  border-bottom: 1px solid var(--global-divider-color);
+
+  &:last-child {
+    border-bottom: none;
+  }
+
+  td {
+    padding: 0.6rem 0.5rem;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    color: var(--global-text-color);
+
+    &:first-child {
+      color: var(--global-text-color-light);
+      font-size: 0.8rem;
+      font-weight: 500;
+      white-space: nowrap;
+    }
+  }
+}
+
 // Homepage Publications
 .homepage-publications {
   margin-bottom: 2rem;

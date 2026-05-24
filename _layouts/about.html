@@ -39,6 +39,7 @@ layout: default
   <section class="homepage-news">
     <div class="section-header">
       <h2>News</h2>
+      <a href="{{ '/news/' | relative_url }}" class="section-link">All news &rarr;</a>
     </div>
     <ul class="news-list">
       {%- assign sorted_news = site.news | sort: "date" | reverse -%}
