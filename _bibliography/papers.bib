@@ -7,6 +7,19 @@
   altmetric={false},
   selected={true}
 }
+@article{chanda2026texbench,
+  abbr={VLDB},
+  title={TexBench: A Unified Benchmarking Suite for Shifting Workloads},
+  author={Chanda, Abhishek and Kaushik, Shubham and Lavrov, Artem and Sarkar, Subhadeep},
+  abstract={Key-value stores are widely adopted as the storage engine for modern applications as they offer high throughput for writes, support for heterogeneous workloads, and easy tunability. Given the large number of key-value stores available and how widely their performance varies with workload characteristics, finding the suitable data store and tuning for a specific workload and performance target often entails extensive benchmarking and analysis. State-of-the-art key-value benchmarks, such as YCSB, db_bench, and KVBench, however, are unable to capture several key characteristics of modern application workloads, such as dynamically shifting workload characteristics, data with varied degrees of sortedness, or application-specific data formats. Further, existing benchmarking tools do not provide a unified interface to benchmark and compare multiple databases against the same workload. We present TexBench, a unified key-value benchmarking suite that enables benchmarking key-value stores against dynamically shifting and production-like workloads and comparing their performance side by side. TexBench is built on top of Tectonic, a highly configurable, Rust-based key-value workload generator that can generate multi-phased shifting workloads, supports a rich set of operations and operation-specific distributions, variable data sortedness, and custom data formats. TexBench's unified framework also enables its users to perform an apples-to-apples comparison of multiple databases against the same workload, and compare the benchmarking results readily within a single interface. Lastly, we augment TexBench with an LLM core that allows users to describe a workload in natural language, have that translated into a custom key-value workload, and benchmark and compare multiple databases against it in parallel.},
+  journal={52nd International Conference on Very Large Data Bases (Demo)},
+  month={September},
+  year={2026},
+  pdf={TexBench.pdf},
+  html={https://github.com/SSD-Brandeis/TexBench},
+  altmetric={false},
+  selected={true}
+}
 @article{kaushik2026rangereduce,
   abbr={ICDE},
   title={RangeReduce: Query-Driven LSM Compactions},
