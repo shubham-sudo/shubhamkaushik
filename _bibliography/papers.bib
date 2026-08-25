@@ -21,6 +21,21 @@
   altmetric={false},
   selected={true}
 }
+@article{kaushik2026texbenchllm,
+  abbr={TPCTC},
+  title={TexBench: Harnessing LLMs for Efficient Key-Value Benchmarking},
+  author={Kaushik*, Shubham and Chanda*, Abhishek and Sarkar, Subhadeep},
+  note={* Equal contribution},
+  abstract={Key-value stores are widely adopted to serve modern heterogeneous workloads, yet selecting the best key-value store for a given workload and target performance remains an incredibly complex and time-consuming task, even for expert DBAs. In practice, this entails extensive, large-scale benchmarking and analysis involving dozens of candidate key-value stores. Comparing databases using existing key-value benchmarks, such as YCSB, KVBench, db_bench, and Tectonic, has several challenges: they require substantial effort to set up the benchmarking environment and connect the databases, are unable to capture the dynamic and complex nature of real-world workloads, or rely on fixed, templated benchmark workloads with limited customization options. We introduce TexBench, a unified key-value benchmarking suite that abstracts the complexities of workload configuration, benchmark setup, and database connections behind a unified interface, enabling users to evaluate multiple key-value stores against production-like workloads and visually compare their performance side by side. TexBench uses Tectonic under the hood to emulate the dynamic and complex properties of real-world workloads, and integrates a large language model (LLM) plugin that captures benchmarking specifications expressed in natural language and translates them into a JSON format interpretable by Tectonic. TexBench currently supports four key-value stores – ScyllaDB, RocksDB, Cassandra, and Redis – and performs up to 16.7x faster in terms of workload generation compared to raw LLM prompting.},
+  journal={18th TPC Technology Conference on Performance Evaluation & Benchmarking},
+  month={September},
+  year={2026},
+  publisher={TPC},
+  pdf={TexBenchTPCTC.pdf},
+  html={https://github.com/SSD-Brandeis/TexBench},
+  altmetric={false},
+  selected={true}
+}
 @article{kaushik2026rangereduce,
   abbr={ICDE},
   title={RangeReduce: Query-Driven LSM Compactions},
