@@ -6,11 +6,12 @@ module Jekyll
             require 'digest/md5'
             require 'pathname'
 
-            attr_accessor :file_name, :directory
+            attr_accessor :file_name, :directory, :extra_files
 
-            def initialize(file_name:, directory: nil)
+            def initialize(file_name:, directory: nil, extra_files: [])
                 self.file_name = file_name
                 self.directory = directory
+                self.extra_files = extra_files
             end
 
             def digest!
@@ -21,7 +22,9 @@ module Jekyll
 
             def directory_files_content
                 target_path = File.join(directory, '**', '*')
-                Dir[target_path].map{|f| File.read(f) unless File.directory?(f) }.join
+                files = Dir[target_path].reject { |f| File.directory?(f) }
+                files += extra_files.select { |f| File.exist?(f) }
+                files.map { |f| File.read(f) }.join
             end
 
             def file_content
@@ -43,7 +46,7 @@ module Jekyll
         end
 
         def bust_css_cache(file_name)
-            CacheDigester.new(file_name: file_name, directory: 'assets/_sass').digest!
+            CacheDigester.new(file_name: file_name, directory: '_sass', extra_files: ['assets/css/main.scss', '_config.yml']).digest!
         end
     end
 end

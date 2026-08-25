@@ -20,15 +20,19 @@ related_publications: chanda2026texbench, kaushik2026texbenchllm, ott2025tectoni
       <div class="tb-links">
 
         <a href="#" class="tb-card tb-card-demo" target="_blank" rel="noopener">
-          <span class="tb-card-icon"><i class="fa-solid fa-rocket"></i></span>
-          <span class="tb-card-title">Try the Demo</span>
+          <span class="tb-card-heading">
+            <span class="tb-card-icon"><i class="fa-solid fa-rocket"></i></span>
+            <span class="tb-card-title">Try the Demo</span>
+          </span>
           <span class="tb-card-sub">Spin up TexBench and benchmark key-value stores live, right in your browser.</span>
           <span class="tb-card-cta">Launch demo <i class="fa-solid fa-arrow-right"></i></span>
         </a>
 
         <div class="tb-card tb-card-papers">
-          <span class="tb-card-icon"><i class="fa-solid fa-file-lines"></i></span>
-          <span class="tb-card-title">Read the Papers</span>
+          <span class="tb-card-heading">
+            <span class="tb-card-icon"><i class="fa-solid fa-file-lines"></i></span>
+            <span class="tb-card-title">Read the Papers</span>
+          </span>
           <span class="tb-card-sub">Two takes on TexBench &mdash; the full workshop paper and the demo track paper.</span>
           <div class="tb-paper-list">
             <a href="/assets/pdf/TexBenchTPCTC.pdf" class="tb-paper-link" target="_blank" rel="noopener">
@@ -59,7 +63,12 @@ related_publications: chanda2026texbench, kaushik2026texbenchllm, ott2025tectoni
 
 <style>
   .texbench-landing .tb-bio-row {
-    align-items: flex-start;
+    align-items: stretch;
+  }
+
+  .texbench-landing .hero-left {
+    display: flex;
+    flex-direction: column;
   }
 
   .tb-greeting {
@@ -75,18 +84,19 @@ related_publications: chanda2026texbench, kaushik2026texbenchllm, ott2025tectoni
 
   .tb-links {
     display: flex;
+    flex: 1;
     flex-wrap: wrap;
-    gap: 1.25rem;
+    gap: 1rem;
     align-items: stretch;
-    margin-top: 1.5rem;
+    margin-top: 1.25rem;
   }
 
   .tb-card {
-    flex: 1 1 220px;
+    flex: 1 1 200px;
     display: flex;
     flex-direction: column;
-    padding: 1.15rem 1.25rem;
-    border-radius: 16px;
+    padding: 0.85rem 1rem;
+    border-radius: 14px;
     border: 1px solid var(--global-divider-color);
     background: var(--global-card-bg-color);
     text-decoration: none;
@@ -99,28 +109,35 @@ related_publications: chanda2026texbench, kaushik2026texbenchllm, ott2025tectoni
     border-color: var(--global-theme-color);
   }
 
-  .tb-card-icon {
-    font-size: 1.35rem;
-    color: var(--global-theme-color);
-    margin-bottom: 0.4rem;
-  }
-
-  .tb-card-title {
-    font-size: 1.15rem;
-    font-weight: 700;
-    color: var(--global-text-color);
+  .tb-card-heading {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     margin-bottom: 0.3rem;
   }
 
+  .tb-card-icon {
+    font-size: 1.15rem;
+    color: var(--global-theme-color);
+    line-height: 1;
+  }
+
+  .tb-card-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--global-text-color);
+  }
+
   .tb-card-sub {
-    font-size: 0.95rem;
+    font-size: 0.85rem;
     color: var(--global-text-color-light);
-    line-height: 1.6;
+    line-height: 1.5;
     flex-grow: 1;
   }
 
   .tb-card-cta {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
     font-weight: 600;
     color: var(--global-theme-color);
   }
@@ -135,18 +152,19 @@ related_publications: chanda2026texbench, kaushik2026texbenchllm, ott2025tectoni
   }
 
   .tb-paper-list {
-    margin-top: 0.75rem;
+    margin-top: 0.5rem;
     display: flex;
     flex-direction: column;
-    gap: 0.45rem;
+    gap: 0.35rem;
   }
 
   .tb-paper-link {
     font-weight: 600;
+    font-size: 0.85rem;
     color: var(--global-text-color);
     text-decoration: none;
-    padding: 0.5rem 0.8rem;
-    border-radius: 10px;
+    padding: 0.4rem 0.65rem;
+    border-radius: 8px;
     border: 1px solid var(--global-divider-color);
     transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease;
   }
