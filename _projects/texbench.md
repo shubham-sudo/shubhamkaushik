@@ -19,7 +19,7 @@ related_publications: chanda2026texbench, kaushik2026texbenchllm, ott2025tectoni
 
       <div class="tb-links">
 
-        <a href="#" class="tb-card tb-card-demo" target="_blank" rel="noopener">
+        <a href="http://192.5.86.228/" class="tb-card tb-card-demo" target="_blank" rel="noopener">
           <span class="tb-card-heading">
             <span class="tb-card-icon"><i class="fa-solid fa-rocket"></i></span>
             <span class="tb-card-title">Try the Demo</span>
