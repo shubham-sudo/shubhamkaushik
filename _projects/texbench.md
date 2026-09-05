@@ -8,8 +8,6 @@ category: Published
 related_publications: chanda2026texbench, kaushik2026texbenchllm, ott2025tectonic
 ---
 
-## What is TexBench?
-
 Picking the right key-value store for a workload &mdash; and tuning it correctly &mdash; usually means running the same benchmark against a dozen candidate databases by hand. Existing benchmarks like **YCSB**, **db_bench**, and **KVBench** make this harder than it should be: each has its own setup process, its own configuration language, and none of them let you compare multiple databases against the *same* workload side by side.
 
 **TexBench** is a unified key-value benchmarking suite that abstracts away workload configuration, benchmark setup, and database connections behind one interface. Point it at a workload and a set of databases, and it runs the benchmark against all of them and lets you compare the results directly.
